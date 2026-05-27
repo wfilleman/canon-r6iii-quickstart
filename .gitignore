@@ -1,0 +1,22 @@
+# Craft Agent workspace artifacts — never commit
+.claude-plugin/
+sessions/
+labels/
+statuses/
+sources/
+skills/
+events.jsonl
+config.json
+views.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+*~
