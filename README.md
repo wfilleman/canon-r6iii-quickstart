@@ -40,7 +40,7 @@ A 14-slide deck covering:
 
 | File | What it is |
 |------|------------|
-| `canon-r6iii.html` | The whole app (HTML + CSS + JS, no external deps) |
+| `index.html` | The whole app (HTML + CSS + JS, no external deps) |
 | `manifest.json` | PWA install metadata |
 | `sw.js` | Service worker — pre-caches everything for offline use |
 | `icon.png` | 512×512 home-screen icon |

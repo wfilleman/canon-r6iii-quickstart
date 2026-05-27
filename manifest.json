@@ -2,7 +2,7 @@
   "name": "Canon EOS R6 Mark III · Alaska Field Guide",
   "short_name": "R6 III Guide",
   "description": "Offline-capable quick start guide for the Canon EOS R6 Mark III tailored to Alaska wildlife, landscapes, and family portraits.",
-  "start_url": "canon-r6iii.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",

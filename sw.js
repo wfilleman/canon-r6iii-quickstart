@@ -1,6 +1,6 @@
 // canon-r6iii service worker
-const CACHE = 'canon-r6iii-v1764205200';
-const ASSETS = ['./', 'canon-r6iii.html', 'manifest.json', 'icon.png'];
+const CACHE = 'canon-r6iii-v1764205400';
+const ASSETS = ['./', 'index.html', 'manifest.json', 'icon.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -35,7 +35,7 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => {
           if (event.request.mode === 'navigate' || event.request.destination === 'document') {
-            return caches.match('canon-r6iii.html');
+            return caches.match('index.html');
           }
           throw new Error('Network failed and no cached response');
         });
