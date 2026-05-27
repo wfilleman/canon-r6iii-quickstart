@@ -725,7 +725,18 @@ function el(tag, attrs, children) {
     if (!Array.isArray(children)) children = [children];
     for (const c of children) {
       if (c == null) continue;
-      if (typeof c === "string") e.appendChild(document.createTextNode(c));
+      if (typeof c === "string") {
+        // If the string looks like HTML (contains a tag opener like "<word"),
+        // parse it as a fragment so <strong>/<em>/<span> render properly.
+        // Static authored content only — no XSS surface.
+        if (/<\w/.test(c)) {
+          const tmp = document.createElement("template");
+          tmp.innerHTML = c;
+          e.appendChild(tmp.content);
+        } else {
+          e.appendChild(document.createTextNode(c));
+        }
+      }
       else e.appendChild(c);
     }
   }

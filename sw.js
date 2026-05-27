@@ -1,5 +1,5 @@
 // canon-r6iii service worker
-const CACHE = 'canon-r6iii-v1764205400';
+const CACHE = 'canon-r6iii-v1764207600';
 const ASSETS = ['./', 'index.html', 'manifest.json', 'icon.png'];
 
 self.addEventListener('install', (event) => {
